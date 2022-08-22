@@ -76,7 +76,8 @@ I have posted my full EFI config with my RX 6900XT working in another [repositor
     * Make the `device-id` have the value of `BF730000`
     * Make the `model` have the value `Radeon RX 6900 XT (XTXH)`
     * ![DeviceProperties Section](/assets/device_pic.png)
-* Under `NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args`, append the boot arg `agdpmod=pikera`
+* Under `NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args`, append the boot arg `agdpmod=pikera -radcodec`
+    * `-radcodec`: Used for allowing officially unsupported AMD GPUs (spoofed) to use the Hardware Video Encoder
     * ![NVRAM Section](/assets/nvram_pic.png)
 * Save the file
 
